@@ -1,0 +1,15 @@
+[paths]
+source =
+   ../scania_truck
+   */site-packages/scania_truck
+
+[run]
+branch = true
+parallel = true
+source =
+    scania_truck
+    tests
+
+[report]
+show_missing = true
+precision = 2

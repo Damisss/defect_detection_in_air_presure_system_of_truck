@@ -1,0 +1,21 @@
+include *.txt
+include *.md
+include *.pickle
+recursive-include ./scania_truck/*
+recursive-include ./artifacts/*
+
+include scania_truck/train_data/data.csv
+include scania_truck/models/*.pickle
+include scania_truck/VERSION
+include scania_truck/config.yml
+include scania_truck/db_operations/prediction.sql
+include scania_truck/config/prediction.sql
+
+include ./requirements.txt
+include ./mlflow.db
+
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
