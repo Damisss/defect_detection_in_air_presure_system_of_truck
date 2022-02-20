@@ -1,0 +1,20 @@
+include *.txt
+include *.md
+include *.pickle
+recursive-include ./scania_truck_air_presure_fault_detector/*
+recursive-include ./artifacts/*
+
+include scania_truck_air_presure_fault_detector/train_data/data.csv
+include scania_truck_air_presure_fault_detector/models/*.pickle
+include scania_truck_air_presure_fault_detector/VERSION
+include scania_truck_air_presure_fault_detector/config.yml
+include scania_truck_air_presure_fault_detector/config/prediction.sql
+
+include ./requirements.txt
+include ./mlflow.db
+
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
